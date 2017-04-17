@@ -1,0 +1,35 @@
+<ion-view title="Start >>" id="homePage" style="background-color:#AFC9AF;" >
+    
+   <div class = "tabs">
+   <a class = "tab-item">
+     
+      Show Optimal Route
+   </a>
+	
+   <a class = "tab-item">
+     
+      History
+   </a>
+	
+   <a class = "tab-item">
+     
+      Truck Info
+   </a>
+	
+ </div>
+    </div>
+    <ion-content padding="true" class="has-header" ng-controller="homeCtrl">
+        <form id="searchForm" class="list">
+             <div id="searchApp-bar3" class="button-bar">
+              <button id="searchApp-button11"  ng-click="search()" style="border-radius:38px 38px 38px 38px;" class="button button-dark  button-block">Show Route in Map>></button>
+              <div class="spacer" style="width: 36px; height: 36px;"></div>         
+             <button id="searchApp-button11"  ng-click="search()" style="border-radius:38px 38px 38px 38px;" class="button button-dark  button-block">Show in Tabular Format>></button>
+             </div> 
+        </form>
+        <div class="spacer" style="width: 300px; height: 18px;"></div>        
+        <div id="map" data-tap-disabled="true"></div>
+        <div id="show-list">
+            
+        </div>
+    </ion-content>
+</ion-view>
